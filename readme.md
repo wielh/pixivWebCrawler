@@ -15,3 +15,4 @@
                           可以看到許多API的request header都帶有Cookie，將Cookie字串複製下來。
     - --search_id : 如果有此flag，代表要將作品id與一些其他資訊下載到 mongodb
     - --download : 如果有此flag，則根據在mongodb的作品id下載影像
+    - --max_downloaded {int}: 如果有此flag，則只下載前{int}個id所包含的影像
