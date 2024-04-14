@@ -1,4 +1,4 @@
-# Bookstore API 介紹
+# PixivWebCrawler 介紹
 
 ## 1. 這是一個怎麼樣的程式
   使用 typescript 與 node.js 做的程式，用來自動下載 [pixiv](https://www.pixiv.net/) 網站的用戶自己收藏的圖片
