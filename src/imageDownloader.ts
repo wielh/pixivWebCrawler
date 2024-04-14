@@ -1,5 +1,5 @@
 import axios,{AxiosResponse} from 'axios';
-import {createWriteStream} from 'fs';
+import {createWriteStream,mkdir} from 'fs';
 import { pixivSetting } from './config.js'
 import { markDownloaded, getUndownloadImageNumber, getIllustIds} from './dbStructure.js'
 import { join } from 'path';
@@ -29,6 +29,7 @@ export class pictureDownloader {
     constructor(userID: string, cookieStr:string  ,maxDownloaded: number) {
         this.headers = pixivSetting.generateHeaders(userID, cookieStr)
         this.maxDownloaded = maxDownloaded>=0? maxDownloaded:0
+        mkdir("image",(err)=>{})
     }
 
     async downloadImages() {
