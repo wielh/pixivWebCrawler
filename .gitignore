@@ -1,5 +1,5 @@
 node_modules/
-image/
+image/*
 test/
 *.js
 !mongo-script.js
